@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
     private Button btn;
 
     private void init(){
-        txtMetin=(EditText)findViewById(R.id.txtMetin);
+        txtMetin=(EditText)findViewById(R.id.txt);
         btn=(Button)findViewById(R.id.btn);
     }
 
