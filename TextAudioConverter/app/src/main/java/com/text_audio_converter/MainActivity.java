@@ -32,8 +32,15 @@ public class MainActivity extends Activity {
             @Override
             public void onInit(int status) {
                 if(status != TextToSpeech.ERROR) {
-                    //Locale locale = new Locale("tr", "TR");
-                    tts.setLanguage(Locale.ENGLISH);
+
+                    //Türkçe İçin
+                    //Locale locale =  new Locale("tr","TR");
+
+                    //İngilizce
+                    Locale locale =  new Locale("en","US");
+
+                    Locale.setDefault(locale);
+                    tts.setLanguage(locale);
                 }
             }
         });
